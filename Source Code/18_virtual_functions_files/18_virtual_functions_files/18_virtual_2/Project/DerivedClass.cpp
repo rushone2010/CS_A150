@@ -5,7 +5,7 @@ DerivedClass::DerivedClass()
 	derivedVar = "derivedVar N/A";
 }
 
-DerivedClass::DerivedClass(const string& newBaseVar, 
+DerivedClass::DerivedClass(const string& newBaseVar,
 							const string& newDerivedVar)
 							:BaseClass(newBaseVar)
 {
@@ -15,7 +15,7 @@ DerivedClass::DerivedClass(const string& newBaseVar,
 void DerivedClass::print() const
 {
 	BaseClass::print();
-	cout << "    derivedVar = " 
+	cout << "    derivedVar = "
 		<< derivedVar << endl;
 }
 

@@ -1,3 +1,5 @@
+// Working with files.
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,12 +7,11 @@ using namespace std;
 
 int main( )
 {
-	string firstName, lastName;
-	int score;
   	fstream inputStream;
-
  	inputStream.open("player.txt");
 
+	int score;
+	string firstName, lastName;
  	inputStream >> score;
  	inputStream >> firstName >> lastName;
 
@@ -20,5 +21,6 @@ int main( )
 
  	inputStream.close();
 
-     return 0;
+	cout << endl;
+  return 0;
 }

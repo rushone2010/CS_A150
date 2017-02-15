@@ -1,13 +1,11 @@
-/****************************************************************
-
-	The recursive function squares with parameter n of 
-	type int and returns the sum of the square of the  
+/*
+	The recursive function squares with parameter n of
+	type int and returns the sum of the square of the
 	numbers 1 to n.
 
 	Example: squares(3) returns 14, because
 		1^2 + 2^2 + 3^2  is 14
-		
-****************************************************************/
+*/
 
 #include <iostream>
 
@@ -27,7 +25,6 @@ int main()
 	cout << squares(number) << endl;
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }
 
@@ -38,4 +35,3 @@ int squares(int n)
 	else
 		return(squares(n - 1) + n * n);
 }
-

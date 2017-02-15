@@ -1,6 +1,4 @@
-/*
-	(name header)
-*/
+// Calculates return on deposit after one year
 
 #include <iostream>
 using namespace std;
@@ -18,6 +16,5 @@ int main( )
 		 << " an amount worth waiting for.\n";
 
 	cout << endl;
-	system("Pause");
-    return 0;
+  return 0;
 }

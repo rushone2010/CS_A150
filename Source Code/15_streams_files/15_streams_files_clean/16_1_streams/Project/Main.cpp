@@ -1,13 +1,11 @@
-/*****************************************************************
-
+/*
 	IO Streams - Example 1
 
-This program reads from a text file. file_1.txt, which
-constains two numbers.
+	This program reads from a text file. file_1.txt, which
+	constains two numbers.
 
-The file is in the same folder where the Main.cpp file is.
-
-*****************************************************************/
+	The file is in the same folder where the Main.cpp file is.
+*/
 
 #include <iostream>
 #include <fstream>	//this library includes the ifstream class
@@ -35,6 +33,5 @@ int main()
 	infile.close();
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }

@@ -18,4 +18,3 @@ void BaseClass::print() const
 BaseClass::~BaseClass()
 {
 }
-

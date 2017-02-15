@@ -1,4 +1,4 @@
-//Implementation of class Employee
+// Implementation of class Employee
 
 #include "Employee.h"
 
@@ -8,13 +8,13 @@ Employee::Employee( )
 }
 
 	//overloaded constructor
-Employee::Employee(const string& newSSN) 
-{			
+Employee::Employee(const string& newSSN)
+{
 	ssn = newSSN;
 }
 
 	//getSSN
-string Employee::getSSN( ) const 
+string Employee::getSSN( ) const
 {
     return ssn;
 }

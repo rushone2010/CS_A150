@@ -1,5 +1,6 @@
-//Computes the area of a circle and the volume of a sphere.
-//Uses the same radius for both calculations.
+// Computes the area of a circle with the radius given and
+// the volume of a sphere with the radius given.
+
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -7,10 +8,14 @@ using namespace std;
 const double PI = 3.14159;
 
 double area(double radius);
-//Returns the area of a circle with the specified radius.
+// area - Computes the area of a circle with the radius given.
+// @param double - The radius of the circle.
+// @return double - The area of the circle.
 
 double volume(double radius);
-//Returns the volume of a sphere with the specified radius.
+// volume - Computes the volume of a sphere with the radius given.
+// @param double - The radius of the sphere.
+// @return double - The volume of the sphere.
 
 int main( )
 {
@@ -19,23 +24,27 @@ int main( )
             << "and a sphere (in inches): ";
     cin >> radiusOfBoth;
 
-    cout << "Radius = " << radiusOfBoth << " inches\n"
-            << "Area of circle = " << area(radiusOfBoth)
-            << " square inches\n"
-            << "Volume of sphere = " << volume(radiusOfBoth)
-            << " cubic inches\n";
+    double areaOfCircle = area(radiusOfBoth);
+    double volumeOfSphere = volume(radiusOfBoth);
 
-	cout << endl;
-	system("Pause");
-    return 0;
+    cout << "\nRadius = " << radiusOfBoth << " inches\n"
+        << "Area of circle = " << areaOfCircle
+        << " square inches\n"
+        << "Volume of sphere = " << volumeOfSphere
+        << " cubic inches\n";
+
+    cout << endl;
+	return 0;
 }
 
 double area(double radius)
 {
+	// formula for area of a circle: (PI * r^2)
     return (PI * radius * radius);
 }
 
 double volume(double radius)
 {
-    return ((4.0/3.0) * PI * radius * radius * radius);
+	// formula for volume of a sphere: ((4/3) * PI * r^2)
+    return ((4.0/3.0) * PI * pow(radius, 3));
 }

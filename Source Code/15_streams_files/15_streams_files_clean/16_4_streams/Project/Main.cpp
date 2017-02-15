@@ -1,14 +1,12 @@
-/*****************************************************************
-	IO Streams - Example 4
-
-Reading up to the end of the file.
-
-*****************************************************************/
+/*
+  IO Streams - Example 4
+  Reading up to the end of the file.
+*/
 
 #include <iostream>
-#include <fstream>	
+#include <fstream>
 
-using namespace std;	
+using namespace std;
 
 int main()
 {
@@ -40,6 +38,5 @@ int main()
 	infile.close();
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }

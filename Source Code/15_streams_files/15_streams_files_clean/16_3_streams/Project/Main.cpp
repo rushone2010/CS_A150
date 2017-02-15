@@ -1,20 +1,19 @@
-/*****************************************************************
-	IO Streams - Example 3
+/*
+  IO Streams - Example 3
 
-This program creates a text file,
-	writes to the file and closes it,
-	then it reopens the file to append
-	more contents to it.
+  This program creates a text file,
+  writes to the file and closes it,
+  then it reopens the file to append
+  more contents to it.
 
-(Open the Project folder where the Main.cpp file is 
-	to see the new file being created.)
-
-*****************************************************************/
+  (Open the Project folder where the Main.cpp file is
+  to see the new file being created.)
+*/
 
 #include <iostream>
-#include <fstream>	
+#include <fstream>
 
-using namespace std;	
+using namespace std;
 
 int main()
 {
@@ -38,8 +37,8 @@ int main()
 	outfile.close();
 
 	/*******************************************************
-		The file is closed. Now we will re-open it and 
-		append more text to it. 
+		The file is closed. Now we will re-open it and
+		append more text to it.
 
 	*******************************************************/
 
@@ -58,6 +57,5 @@ int main()
 	outfile.close();
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }

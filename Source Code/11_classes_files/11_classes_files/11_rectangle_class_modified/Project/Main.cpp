@@ -1,6 +1,5 @@
-/***************************************************
-		Using the Rectangle Class
-***************************************************/
+// Using the Rectangle Class
+
 
 #include "Rectangle.h"	//need to include the class interface
 
@@ -9,14 +8,14 @@ using namespace std;
 
 int main()
 {
-	Rectangle r1;	
+	Rectangle r1;
 
-	Rectangle r2(3.0, 4.5);  
-	
+	Rectangle r2(3.0, 4.5);
+
 	cout.setf(ios::fixed);
 	cout.setf(ios::showpoint);
 	cout.precision(2);
-	
+
 	cout << "Rectangle 1"
 		<< "\n    Width: " << r1.getWidth()
 		<< "\n    Height: " << r1.getHeight() << endl;
@@ -39,6 +38,5 @@ int main()
 		<< r2.calculateArea() << " units" << endl;
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }

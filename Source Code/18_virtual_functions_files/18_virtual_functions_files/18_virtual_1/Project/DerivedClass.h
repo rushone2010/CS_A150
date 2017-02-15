@@ -11,7 +11,7 @@ class DerivedClass : public BaseClass
 {
 public:
 	DerivedClass();
-	DerivedClass(const string& newBaseVar, 
+	DerivedClass(const string& newBaseVar,
 					const string& newDerivedVar);
 
 	void print() const;  //redefined

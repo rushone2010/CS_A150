@@ -1,10 +1,9 @@
-//hourlyemployee.cpp 
-//Implementation for the class HourlyEmployee.
+// Implementation for the class HourlyEmployee.
 
 #include "HourlyEmployee.h"
 
 	//default constructor
-HourlyEmployee::HourlyEmployee() 
+HourlyEmployee::HourlyEmployee()
 {
 	//Only need to set up the var of this class.
 	wageRate = 0;
@@ -36,7 +35,7 @@ double HourlyEmployee::getRate( ) const
 void HourlyEmployee::printInfo() const
 {
 	cout << "SSN: " << getSSN() << endl;
-	
+
 	//printing the output using the parent's accessor function
 	cout << "Rate: " << wageRate << endl;
 
@@ -48,9 +47,3 @@ void HourlyEmployee::printInfo() const
 HourlyEmployee::~HourlyEmployee()
 {
 }
-
-
-
-
-
-

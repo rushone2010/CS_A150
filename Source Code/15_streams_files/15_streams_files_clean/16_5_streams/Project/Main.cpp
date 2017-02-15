@@ -1,18 +1,17 @@
-/*****************************************************************
-	IO Streams - Example 5
+/*
+  IO Streams - Example 5
 
-    Reads from the file story.txt 
-	and prints to another file.
-	The user will input the name of 
-	the file to write on.
-
-*****************************************************************/
+  Reads from the file story.txt
+  and prints to another file.
+  The user will input the name of
+  the file to write on.
+*/
 
 #include <iostream>
 #include <string>
-#include <fstream>	
+#include <fstream>
 
-using namespace std;	
+using namespace std;
 
 int main()
 {
@@ -44,25 +43,24 @@ int main()
 
 	char next;
     int n = 1;
-	
-    infile.get(next);				//read next char from input file	
+
+    infile.get(next);				//read next char from input file
     outfile << n << " ";			//write first number on output file
-	
+
     while (! infile.eof( ))			//repeat until the end of file
     {
-		outfile << next;			//write char on output file		
+		outfile << next;			//write char on output file
         if (next == '\n')			//if char was a new line
-        {			
-            ++n;					//increase number			
+        {
+            ++n;					//increase number
             outfile << n << ' ';	//write number on output file
-        }		
+        }
         infile.get(next);			//read next char
     }
 
-    infile.close( );
-    outfile.close( );
-	
+	  infile.close( );
+	  outfile.close( );
+
 	cout << endl;
-	system("Pause");
 	return 0;
 }

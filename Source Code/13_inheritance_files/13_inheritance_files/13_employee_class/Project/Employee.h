@@ -1,5 +1,5 @@
-//Interface of the class Employee
-//Base class, from which we will derive subsets of employees.
+// Interface of the class Employee
+// Base class, from which we will derive subsets of employees.
 
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
@@ -23,8 +23,7 @@ public:
 	~Employee();
 
 private:
-    string ssn; 
+    string ssn;
 };
 
-#endif 
-
+#endif

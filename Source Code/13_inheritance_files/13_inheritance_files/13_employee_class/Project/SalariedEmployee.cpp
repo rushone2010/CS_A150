@@ -1,10 +1,10 @@
-//SalariedEmployee.cpp 
-//This is the implementation for the class SalariedEmployee.
+// SalariedEmployee.cpp
+// This is the implementation for the class SalariedEmployee.
 
 #include "SalariedEmployee.h"
 
 	//default constructor
-SalariedEmployee::SalariedEmployee( ) 
+SalariedEmployee::SalariedEmployee( )
 {
     salary = 0.0;
 }
@@ -17,7 +17,7 @@ SalariedEmployee::SalariedEmployee(const string& newSSN,
 }
 
 	//getSalary
-double SalariedEmployee::getSalary( ) const 
+double SalariedEmployee::getSalary( ) const
 {
     return salary;
 }

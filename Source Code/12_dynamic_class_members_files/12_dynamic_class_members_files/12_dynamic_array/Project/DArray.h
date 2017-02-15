@@ -8,7 +8,7 @@ class DArray
 {
 public:
     DArray( );
-    //Default constructor -	Initializes array 
+    //Default constructor -	Initializes array
 	//						to a capacity of 50.
 
     DArray(int);
@@ -22,11 +22,11 @@ public:
 	bool compareArrays(const DArray& otherArray) const;
 	// compareArrays - Returns true if two arrays have the same elements
 	//					in the same order, false otherwise.
-	// @param const DArray& - The array to which the object array 
+	// @param const DArray& - The array to which the object array
 	//					is compared.
 	// @return bool - True if arrays are equal, false otherwise.
 
-	~DArray( ); 
+	~DArray( );
 	//Destructor
 
 private:

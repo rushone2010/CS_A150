@@ -1,12 +1,12 @@
-/* 
+/*
 	What if we did not pass by reference or
-	 by using a pointer?
+	by using a pointer?
 	What if we passed the object by value?
 
 	Let's try it WITHOUT the virtual modifier.
 
 	When done --> Add the virtual modifier.
-*/ 
+*/
 
 #include "DerivedClass.h"
 
@@ -32,18 +32,17 @@ int main()
 	callPrint(derivedObj);
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }
 
-void callPrint(BaseClass obj)		
+void callPrint(BaseClass obj)
 {
 	obj.print();
 }
 
 /*************************************************
 
-	Why does NOT work even if we have a 
+	Why does NOT work even if we have a
 	virtual print function in the BaseClass?
 
 	Because when passing by value, the compiler

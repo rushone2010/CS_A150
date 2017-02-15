@@ -1,6 +1,4 @@
-/***************************************************
-		Vectors
-***************************************************/
+// Vectors
 
 #include <iostream>
 #include <vector>
@@ -18,7 +16,7 @@ int main()
 
 	//insert items in the vector
 	cout << "\nInserting items...\n";
-	v.push_back(10);		
+	v.push_back(10);
 	v.push_back(11);
 	v.push_back(12);
 	v.push_back(13);
@@ -35,7 +33,7 @@ int main()
 		cout << "\nThere are items in the vector.\n";
 
 	//print vector
-	unsigned int numOfElements = v.size();			// EFFICIENCY: USE A VARIABLE TO STORE THE SIZE SO THAT THE 
+	unsigned int numOfElements = v.size();			// EFFICIENCY: USE A VARIABLE TO STORE THE SIZE SO THAT THE
 													// FUNCTION IS NOT CONTINUOUSLY CALLED IN THE FOR LOOP
 	for(unsigned int i = 0; i < numOfElements; ++i)
 		cout << v[i] << " ";
@@ -75,7 +73,5 @@ int main()
 		cout << v[i] << " ";
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }
-

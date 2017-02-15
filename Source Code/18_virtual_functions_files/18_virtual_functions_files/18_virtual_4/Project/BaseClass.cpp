@@ -12,11 +12,10 @@ BaseClass::BaseClass(const string& newBaseVar)
 
 void BaseClass::print() const
 {
-	cout << "    baseVar = " 
+	cout << "    baseVar = "
 		<< baseVar << endl;
 }
 
 BaseClass::~BaseClass()
 {
 }
-

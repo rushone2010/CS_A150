@@ -1,8 +1,4 @@
-/*
-	(name header)
-	
-	Illustrates overloading the function name ave.
-*/
+// Illustrates overloading the function name ave.
 
 #include <iostream>
 using namespace std;
@@ -29,7 +25,6 @@ int main( )
          << ave(4.5, 5.5) << endl;
 
 	cout << endl;
-	system ("Pause");
     return 0;
 }
 

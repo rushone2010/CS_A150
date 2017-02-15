@@ -1,5 +1,5 @@
 /*
-	Adding "virtual" to the base class print function 
+	Adding "virtual" to the base class print function
 	and the base class destructor.
 */
 
@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void callPrint(BaseClass& obj);		//This function can now work with all 
+void callPrint(BaseClass& obj);		//This function can now work with all
 									//  the objects of the derived classes.
 
 int main()
@@ -30,7 +30,6 @@ int main()
 	callPrint(derivedObj);
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }
 

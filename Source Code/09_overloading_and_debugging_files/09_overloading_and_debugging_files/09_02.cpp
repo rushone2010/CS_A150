@@ -1,6 +1,4 @@
-/*
-	Driver program for the function unitPrice.
-*/
+// Driver program for the function unitPrice.
 
 #include <iostream>
 using namespace std;
@@ -23,7 +21,7 @@ int main( )
         cout << "Enter diameter and price:\n";
         cin >> diameter >> price;
 
-        cout << "unit Price is $" 
+        cout << "unit Price is $"
              << unitPrice(diameter, price) << endl;
 
         cout << "Test again? (y/n)";
@@ -32,13 +30,12 @@ int main( )
     } while (ans == 'y' || ans == 'Y');
 
 	cout << endl;
-	system("Pause");
     return 0;
 }
 
 double unitPrice(double diameter, double price)
 {
-    double radius = diameter/2.0; 
+    double radius = diameter/2.0;
     double area = PI * radius * radius;
 
     return (price/area);

@@ -1,5 +1,5 @@
-//Reads in 5 scores and shows how much each
-//score differs from the highest score.
+// Reads in 5 scores and shows how much each
+// score differs from the highest score.
 
 #include <iostream>
 using namespace std;
@@ -29,6 +29,5 @@ int main( )
         cout << score[i] << " off by " << (max - score[i]) << endl;
 
 	cout << endl;
-	system("Pause");
     return 0;
 }

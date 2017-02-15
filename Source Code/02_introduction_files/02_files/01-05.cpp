@@ -1,4 +1,5 @@
-//Program to demonstrate cin and cout with strings
+// Program to demonstrate cin and cout with strings
+
 #include <iostream>
 #include <string>
 
@@ -6,20 +7,19 @@ using namespace std;
 
 int main( )
 {
-	string dogName;
-	int actualAge;
-	int humanAge;
-
 	cout << "How many years old is your dog?" << endl;
+	int actualAge;
 	cin >> actualAge;
-	humanAge = actualAge * 7;
 
 	cout << "What is your dog's name?" << endl;
+	string dogName;
 	cin >> dogName;
 
-	cout << dogName << "'s age is approximately " <<
-		"equivalent to a " << humanAge << " year old human."
-		<< endl;
+	// 7 represents the numbe of human years equivalent to one dog year.
+	cout << dogName << "'s age is approximately "
+		<< "equivalent to a " <<  (actualAge * 7)
+		<< " year old human." << endl;
 
+	cout << endl;
 	return 0;
 }

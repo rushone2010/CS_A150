@@ -1,7 +1,7 @@
-/* 
-	We now add the virtual modifier to the print 
-	 function and the destructor in the BaseClass.
-*/ 
+/*
+	We now add the virtual modifier to the print
+	function and the destructor in the BaseClass.
+*/
 
 #include "DerivedClass.h"
 
@@ -12,7 +12,7 @@ void callPrint(BaseClass *p);		//We are passing a pointer
 
 int main()
 {
-		//Declaring a pointer that will 
+		//Declaring a pointer that will
 		//  point to objects of the BaseClass
 	BaseClass *pBase;
 
@@ -24,7 +24,7 @@ int main()
 
 	cout << endl << endl;
 
-		//Declaring a pointer that will 
+		//Declaring a pointer that will
 		//  point to objects of the DerivedClass
 	DerivedClass *pDerived;
 
@@ -35,11 +35,10 @@ int main()
 	callPrint(pDerived);
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }
 
-void callPrint(BaseClass *p)		
+void callPrint(BaseClass *p)
 {
 	(*p).print();
 }

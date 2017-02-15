@@ -1,12 +1,10 @@
-/**************************************************************************
-
-	The iterative void function iterDrawStars with a parameter of 
-	type int, a positive integer indicating the number of stars, 
+/*
+	The iterative void function iterDrawStars with a parameter of
+	type int, a positive integer indicating the number of stars,
 	writes out the number of stars (*) to the screen all on one line.
 
 	The function recurDrawStars accomplishes the same task recursively.
-
-**************************************************************************/
+*/
 
 #include <iostream>
 
@@ -27,17 +25,14 @@ int main()
 	cin >> stars;
 
 	cout <<"\n\nUsing iteration...\n";
-	iterDrawStars(stars);	
+	iterDrawStars(stars);
 
 	cout << endl;
-	
+
 	cout <<"\nUsing recursion...\n";
 	recurDrawStars(stars);
 
 	cout << endl;
-
-	cout << endl;
-	system("Pause");
 	return 0;
 }
 
@@ -53,4 +48,3 @@ void recurDrawStars(int n)
 	if (n > 1)
 		recurDrawStars(n - 1);
 }
-

@@ -5,7 +5,7 @@ DerivedClass::DerivedClass()
 	derivedVar = "derivedVar N/A";
 }
 
-DerivedClass::DerivedClass(const string& newBaseVar, 
+DerivedClass::DerivedClass(const string& newBaseVar,
 							const string& newDerivedVar)
 							:BaseClass(newBaseVar)
 {

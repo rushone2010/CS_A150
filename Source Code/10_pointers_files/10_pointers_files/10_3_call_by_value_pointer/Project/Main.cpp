@@ -1,5 +1,5 @@
-//Program to demonstrate the way call-by-value parameters
-//behave with pointer arguments.
+// Program to demonstrate the way call-by-value parameters
+// behave with pointer arguments.
 
 #include <iostream>
 using namespace std;
@@ -21,7 +21,6 @@ int main( )
          << *p << endl;
 
 	cout << endl;
-	system("Pause");
     return 0;
 }
 

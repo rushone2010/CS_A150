@@ -1,7 +1,4 @@
-/***************************************************
-		Using the Rectangle Class
-***************************************************/
-
+// Using the Rectangle Class
 #include "Rectangle.h"	//need to include the class interface
 
 #include <iostream>;
@@ -10,15 +7,15 @@ using namespace std;
 int main()
 {
 	// Create an object using the default constructor
-	Rectangle r1;	
+	Rectangle r1;
 
 	// Create an object using the overloaded constructor
-	Rectangle r2(3.0, 4.51);   
-	
+	Rectangle r2(3.0, 4.51);
+
 	cout.setf(ios::fixed);
 	cout.setf(ios::showpoint);
 	cout.precision(2);
-	
+
 	// Call functions getWidth and getHeight for object r1.
 	cout << "Rectangle 1"
 		<< "\n    Width: " << r1.getWidth()
@@ -39,6 +36,5 @@ int main()
 		<< "\n    Height: " << r1.getHeight() << endl;
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }

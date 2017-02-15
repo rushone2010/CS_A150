@@ -1,9 +1,8 @@
-/* 
-	This program fills an array with positive integers, 
+/*
+	This program fills an array with positive integers,
 	searches the first occurrence of a given number, and
 	returns its location.
 */
-
 
 #include <iostream>
 using namespace std;
@@ -36,7 +35,6 @@ int main( )
 	a = NULL;		// null the pointer
 
 	cout << endl;
-	system("Pause");
     return 0;
 }
 

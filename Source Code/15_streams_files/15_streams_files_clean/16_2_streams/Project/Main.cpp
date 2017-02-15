@@ -1,13 +1,12 @@
-/*****************************************************************
-	IO Streams - Example 2
+/*
+  IO Streams - Example 2
 
-This program creates the file file_2.txt and
-	writes two numbers to the file.
+  This program creates the file file_2.txt and
+  writes two numbers to the file.
 
-(Open the Project folder where the Main.cpp file is 
-	to see the new file being created.)
-
-*****************************************************************/
+  (Open the Project folder where the Main.cpp file is
+  to see the new file being created.)
+*/
 
 #include <iostream>
 #include <fstream>	//this library includes the ofstream class
@@ -36,6 +35,5 @@ int main()
 	outfile.close();
 
 	cout << endl;
-	system("Pause");
 	return 0;
 }

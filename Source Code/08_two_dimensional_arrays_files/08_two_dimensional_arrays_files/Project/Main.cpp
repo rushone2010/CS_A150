@@ -1,8 +1,8 @@
 /*
-	Reads quiz scores for each student into the 
+	Reads quiz scores for each student into the
 	two-dimensional array grade.
 	Computes the average score for each student and
-	the average score for each quiz. 
+	the average score for each quiz.
 	Displays the quiz scores and the averages.
 */
 
@@ -11,7 +11,7 @@
 
 using namespace std;
 
-const int NUMBER_STUDENTS = 4, 
+const int NUMBER_STUDENTS = 4,
 	      NUMBER_QUIZZES = 3;
 
 void computeStAve(const int grade[][NUMBER_QUIZZES], double stAve[]);
@@ -24,21 +24,21 @@ void display(const int grade[][NUMBER_QUIZZES],
 int main( )
 {
     int grade[NUMBER_STUDENTS][NUMBER_QUIZZES];
-	/* 
+	/*
 		Each row (NUMBER_STUDENTS) is a student.
 		Each column (NUMBER_QUIZZES) is a quiz.
-		The values represent the grade the student 
+		The values represent the grade the student
 		has for each quiz.
 
 		Example:
-					Q1	Q2	Q3	
+					Q1	Q2	Q3
 		STUDENT 1:	10	9	10
 		STUDENT 2:	8	9	10
 	*/
 
     double stAve[NUMBER_STUDENTS];
-	/* 
-		Each index represents the quiz average 
+	/*
+		Each index represents the quiz average
 		for each student.
 
 		Example:
@@ -48,8 +48,8 @@ int main( )
 	*/
 
     double quizAve[NUMBER_QUIZZES];
-	/* 
-		Each index represents the student average 
+	/*
+		Each index represents the student average
 		for each quiz.
 
 		Example:
@@ -67,8 +67,7 @@ int main( )
     computeQuizAve(grade, quizAve);
     display(grade, stAve, quizAve);
 
-	cout << endl;
-	system("Pause");
+	  cout << endl;
     return 0;
 }
 
@@ -82,9 +81,9 @@ void computeStAve(const int grade[][NUMBER_QUIZZES], double stAve[])
 
         for (int quizNum = 1; quizNum <= NUMBER_QUIZZES; ++quizNum)
             sum += grade[stNum-1][quizNum-1];
-       
+
 		//sum contains the sum of the quiz scores for student number stNum.
-        
+
 		stAve[stNum-1] = sum / NUMBER_QUIZZES;
         //Average for student stNum is the value of stAve[stNum-1]
     }
@@ -95,14 +94,14 @@ void computeQuizAve(const int grade[][NUMBER_QUIZZES], double quizAve[])
     for (int quizNum = 1; quizNum <= NUMBER_QUIZZES; ++quizNum)
     {
 		//Process one quiz (for all students):
-        
+
 		double sum = 0;
-        
+
 		for (int stNum = 1; stNum <= NUMBER_STUDENTS; ++stNum)
             sum += grade[stNum-1][quizNum-1];
-        
+
 		//sum contains the sum of all student scores on quiz number quizNum.
-        
+
 		quizAve[quizNum-1] = sum / NUMBER_STUDENTS;
         //Average for quiz quizNum is the value of quizAve[quizNum-1]
     }
@@ -121,19 +120,19 @@ void display(const int grade[][NUMBER_QUIZZES],
     for (int stNum = 1; stNum <= NUMBER_STUDENTS; ++stNum)
     {
 		//Display for one stNum
-        cout << setw(10) << stNum 
+        cout << setw(10) << stNum
              << setw(5) << stAve[stNum-1] << " ";
-        
+
 		for (int quizNum = 1; quizNum <= NUMBER_QUIZZES; ++quizNum)
             cout << setw(5) << grade[stNum-1][quizNum-1];
-        
+
 		cout << endl;
     }
 
     cout << "Quiz averages = ";
-    
+
 	for (int quizNum = 1; quizNum <= NUMBER_QUIZZES; ++quizNum)
         cout << setw(5) << quizAve[quizNum-1];
-    
+
 	cout << endl;
 }

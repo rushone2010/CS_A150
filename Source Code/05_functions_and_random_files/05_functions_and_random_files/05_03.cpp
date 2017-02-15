@@ -1,35 +1,44 @@
+// Calculates how much icecream each customer gets
+// based on the amount of customers and the weight
+// of the icecream.
+
 #include <iostream>
 using namespace std;
 
-void iceCreamDivision(int number, double totalWeight);
-//Outputs instructions for dividing totalWeight ounces of ice cream among
-//number customers. If number is 0, only an error message is output.
+void iceCreamDivision(int numberOfCustomers, double totalWeight);
+// iceCreamDivision - Outputs instructions for dividing totalWeight
+//                    ounces of ice cream among number customers.
+//                    If number is 0, only an error message is output.
+// @param int - The number of customers.
+// @param double - The total weight of ice cream.
 
 int main( )
 {
-    int number;
-    double totalWeight;
-
+	int numberOfCustomers;
     cout << "Enter the number of customers: ";
-    cin >> number;
+    cin >> numberOfCustomers;
+
+	double totalWeight;
     cout << "Enter weight of ice cream to divide (in ounces): ";
     cin >> totalWeight;
 
-    iceCreamDivision(number, totalWeight);
+    iceCreamDivision(numberOfCustomers, totalWeight);
 
+	cout << endl;
     return 0;
 }
 
-void iceCreamDivision(int number, double totalWeight)
+void iceCreamDivision(int numberOfCustomers, double totalWeight)
 {
-    double portion;
+	//avoid using return in a void function
 
-    if (number == 0)
+    if (numberOfCustomers == 0)
     {
         cout << "Cannot divide among zero customers.\n";
-        return;
-    } 
-    portion = totalWeight/number;
-    cout << "Each one receives " 
-         << portion << " ounces of ice cream." << endl;
+    }
+	else
+	{
+		cout << "Each one receives "
+			<< (totalWeight/numberOfCustomers) << " ounce(s) of ice cream." << endl;
+	}
 }

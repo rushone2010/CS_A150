@@ -1,4 +1,4 @@
-//Program to demonstrate pointers and dynamic variables.
+// Program to demonstrate pointers and dynamic variables.
 
 #include <iostream>
 using namespace std;
@@ -25,6 +25,5 @@ int main( )
     cout << "Hope you got the point of this example!\n";
 
 	cout << endl;
-	system("Pause");
     return 0;
 }

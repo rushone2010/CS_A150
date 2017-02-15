@@ -1,5 +1,4 @@
-//hourlyemployee.h. 
-//Interface for the class HourlyEmployee.
+// Interface for the class HourlyEmployee.
 
 #ifndef HOURLYEMPLOYEE_H
 #define HOURLYEMPLOYEE_H
@@ -10,10 +9,10 @@
 #include <string>
 using namespace std;
 
-//Here is where we declare that 
+//Here is where we declare that
 // the class HourlyEmployee is the derived class
 // and the class Employee is the base class
-class HourlyEmployee : public Employee 
+class HourlyEmployee : public Employee
 {
 public:
 	//The derived class does NOT inherit constructors.
@@ -31,8 +30,7 @@ public:
 
 private:
 	//This is a new variable
-    double wageRate; 
+    double wageRate;
 };
 
-#endif 
-
+#endif

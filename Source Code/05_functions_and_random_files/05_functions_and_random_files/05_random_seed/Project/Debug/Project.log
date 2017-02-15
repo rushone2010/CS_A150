@@ -1,0 +1,17 @@
+﻿Build started 2/13/2013 12:52:22 PM.
+     1>Project "G:\_CS_A150_TODAY\_Day_2\05_Functions_and_Random\05_files\05_random_seed\Project\Project.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Project.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         Project.vcxproj -> G:\_CS_A150_TODAY\_Day_2\05_Functions_and_Random\05_files\05_random_seed\Debug\Project.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Project.unsuccessfulbuild".
+         Touching "Debug\Project.lastbuildstate".
+     1>Done Building Project "G:\_CS_A150_TODAY\_Day_2\05_Functions_and_Random\05_files\05_random_seed\Project\Project.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.34

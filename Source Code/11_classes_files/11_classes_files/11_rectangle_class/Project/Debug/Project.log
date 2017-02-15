@@ -1,0 +1,21 @@
+﻿Build started 3/13/2012 7:51:06 PM.
+     1>Project "E:\_CS_A150_TODAY\_Day_1\10_Classes\10_rectangle_class\Project\Project.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Project.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp Rectangle.cpp
+         Rectangle.cpp
+     1>e:\_cs_a150_today\_day_1\10_classes\10_rectangle_class\project\rectangle.cpp(19): error C2628: 'Rectangle' followed by 'void' is illegal (did you forget a ';'?)
+     1>e:\_cs_a150_today\_day_1\10_classes\10_rectangle_class\project\rectangle.cpp(20): error C2556: 'Rectangle Rectangle::setWidth(double)' : overloaded function differs only by return type from 'void Rectangle::setWidth(double)'
+                 e:\_cs_a150_today\_day_1\10_classes\10_rectangle_class\project\rectangle.h(27) : see declaration of 'Rectangle::setWidth'
+     1>e:\_cs_a150_today\_day_1\10_classes\10_rectangle_class\project\rectangle.cpp(20): error C2371: 'Rectangle::setWidth' : redefinition; different basic types
+                 e:\_cs_a150_today\_day_1\10_classes\10_rectangle_class\project\rectangle.h(27) : see declaration of 'Rectangle::setWidth'
+         Main.cpp
+     1>e:\_cs_a150_today\_day_1\10_classes\10_rectangle_class\project\main.cpp(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>e:\_cs_a150_today\_day_1\10_classes\10_rectangle_class\project\main.cpp(8): error C2143: syntax error : missing ';' before 'using'
+         Generating Code...
+     1>Done Building Project "E:\_CS_A150_TODAY\_Day_1\10_Classes\10_rectangle_class\Project\Project.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.74

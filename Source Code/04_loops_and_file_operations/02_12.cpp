@@ -6,14 +6,13 @@
 
 using namespace std;
 
-int main( )
+int main()
 {
-  	fstream inputStream;
+  fstream inputStream;
  	inputStream.open("player.txt");
 
 	string text;
- 	while (inputStream >> text)
- 	{
+ 	while (inputStream >> text) {
  		cout << text << endl;
  	}
 

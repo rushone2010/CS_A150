@@ -1,8 +1,8 @@
 #include "DArray.h"
 
-DArray::DArray( )
+DArray::DArray()
 {
-    capacity = 50;
+  capacity = 50;
 	a = new int[capacity];
 	numOfElements = 0;
 }
@@ -10,16 +10,15 @@ DArray::DArray( )
 DArray::DArray(int newCapacity)
 {
 	capacity = newCapacity;
-    a = new int[capacity];
+  a = new int[capacity];
 	numOfElements = 0;
 }
 
 void DArray::addElement(int element)
 {
-    if (numOfElements >= capacity)
-    {
-        cerr << "Attempt to exceed capacity in DArray.\n";
-        exit(0);
+    if (numOfElements >= capacity) {
+      cerr << "Attempt to exceed capacity in DArray.\n";
+      exit(0);
     }
     a[numOfElements] = element;
     ++numOfElements;
@@ -29,12 +28,10 @@ bool DArray::compareArrays(const DArray& otherArray) const
 {
 	if (numOfElements != otherArray.numOfElements)
 		return false;
-	else
-	{
+	else {
 		int idx = 0;
 
-		while (idx < numOfElements)
-		{
+		while (idx < numOfElements) {
 			if (a[idx] == otherArray.a[idx])
 				++idx;
 			else
@@ -44,8 +41,8 @@ bool DArray::compareArrays(const DArray& otherArray) const
 		return true;
 	}
 }
-DArray::~DArray( )
+DArray::~DArray()
 {
-    delete [] a; //delete the array
+  delete [] a; //delete the array
 	a = NULL;	 //null the pointer
 }

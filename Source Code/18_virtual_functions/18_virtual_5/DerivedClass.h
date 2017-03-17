@@ -9,17 +9,17 @@ using namespace std;
 
 class DerivedClass : public BaseClass
 {
-public:
-	DerivedClass();
-	DerivedClass(const string& newBaseVar,
-					const string& newDerivedVar);
+	public:
+		DerivedClass();
+		DerivedClass(const string& newBaseVar,
+						     const string& newDerivedVar);
 
-	void print() const;  //redefined
+		void print() const; // redefined
 
-	~DerivedClass();
+		~DerivedClass();
 
-private:
-	string derivedVar;
+	private:
+		string derivedVar;
 };
 
 #endif

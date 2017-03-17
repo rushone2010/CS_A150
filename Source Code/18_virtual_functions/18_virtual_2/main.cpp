@@ -14,7 +14,7 @@ void callPrint(BaseClass& obj);		//This function can now work with all
 
 int main()
 {
-		// An object of the base class will work correctly.
+	// An object of the base class will work correctly.
 	BaseClass baseObj("Base variable");
 
 	cout << "PRINT THE BASE CLASS OBJ...\n";
@@ -22,8 +22,8 @@ int main()
 
 	cout << endl << endl;
 
-		// An object of the derived class will work correctly,
-		//   because the function print of the base class is virtual.
+	// An object of the derived class will work correctly,
+	// because the function print of the base class is virtual.
 	DerivedClass derivedObj("Derived first variable", "Derived second variable");
 
 	cout << "PRINT THE DERIVED CLASS OBJ...\n";

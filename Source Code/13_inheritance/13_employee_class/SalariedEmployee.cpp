@@ -3,40 +3,39 @@
 
 #include "SalariedEmployee.h"
 
-	//default constructor
-SalariedEmployee::SalariedEmployee( )
+//default constructor
+SalariedEmployee::SalariedEmployee()
 {
-    salary = 0.0;
+  salary = 0.0;
 }
 
-	//overloaded constructor
+//overloaded constructor
 SalariedEmployee::SalariedEmployee(const string& newSSN,
              double newWeeklyPay) :Employee(newSSN)
 {
-	salary = newWeeklyPay;
+  salary = newWeeklyPay;
 }
 
-	//getSalary
-double SalariedEmployee::getSalary( ) const
+//getSalary
+double SalariedEmployee::getSalary() const
 {
-    return salary;
+  return salary;
 }
 
-	//setSalary
+//setSalary
 void SalariedEmployee::setSalary(double newSalary)
 {
-    salary = newSalary;
+  salary = newSalary;
 }
 
-	//print
+//print
 void SalariedEmployee::print() const
 {
-	cout << salary << endl;
-	cout << ssn << endl;
-
+  cout << salary << endl;
+  cout << ssn << endl;
 }
 
-	//destructor
+//destructor
 SalariedEmployee::~SalariedEmployee()
 {
 }

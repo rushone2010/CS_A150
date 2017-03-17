@@ -16,7 +16,7 @@ void DerivedClass::print() const
 {
 	BaseClass::print();
 	cout << "    derivedVar = "
-		<< derivedVar << endl;
+		   << derivedVar << endl;
 }
 
 DerivedClass::~DerivedClass()

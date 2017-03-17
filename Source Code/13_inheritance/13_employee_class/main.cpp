@@ -20,7 +20,7 @@ int main()
 	john.setRate(20.00);
 
 	cout << fixed << setprecision(2) << "New rate: $"
-		<< john.getRate() << endl;
+		   << john.getRate() << endl;
 
 	cout << "\n-------------------------------\n";
 
@@ -32,11 +32,11 @@ int main()
 	//Call a public base-class member function
 	cout << jane.getSSN() << endl;
 	//Call a public derived-class member function
-	//  and change the salary amount
+	//and change the salary amount
 	jane.setSalary(500.00);
 
 	cout << fixed << setprecision(2) << "New salary: $"
-		<< jane.getSalary() << endl;
+		   << jane.getSalary() << endl;
 
 	cout << "\n-------------------------------\n";
 

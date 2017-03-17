@@ -6,19 +6,19 @@ using namespace std;
 
 void sneaky(int *temp);
 
-int main( )
+int main()
 {
-    int *p;
+  int *p;
 
-    p = new int;
-    *p = 77;
-    cout << "Before call to function *p == "
-         << *p << endl;
+  p = new int;
+  *p = 77;
+  cout << "Before call to function *p == "
+       << *p << endl;
 
-    sneaky(p);
+  sneaky(p);
 
-    cout << "After call to function *p == "
-         << *p << endl;
+  cout << "After call to function *p == "
+       << *p << endl;
 
 	cout << endl;
 
@@ -29,8 +29,8 @@ int main( )
 
 void sneaky(int *temp)
 {
-    *temp = 99;
+  *temp = 99;
 
-    cout << "Inside function call *temp == "
-         << *temp << endl;
+  cout << "Inside function call *temp == "
+       << *temp << endl;
 }

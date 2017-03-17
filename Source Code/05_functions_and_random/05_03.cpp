@@ -12,33 +12,34 @@ void iceCreamDivision(int numberOfCustomers, double totalWeight);
 // @param int - The number of customers.
 // @param double - The total weight of ice cream.
 
-int main( )
+int main()
 {
 	int numberOfCustomers;
-    cout << "Enter the number of customers: ";
-    cin >> numberOfCustomers;
+  cout << "Enter the number of customers: ";
+  cin >> numberOfCustomers;
 
 	double totalWeight;
-    cout << "Enter weight of ice cream to divide (in ounces): ";
-    cin >> totalWeight;
+  cout << "Enter weight of ice cream to divide (in ounces): ";
+  cin >> totalWeight;
 
-    iceCreamDivision(numberOfCustomers, totalWeight);
+  iceCreamDivision(numberOfCustomers, totalWeight);
 
 	cout << endl;
-    return 0;
+
+  cin.ignore();
+  cin.get();
+  return 0;
 }
 
 void iceCreamDivision(int numberOfCustomers, double totalWeight)
 {
 	//avoid using return in a void function
 
-    if (numberOfCustomers == 0)
-    {
-        cout << "Cannot divide among zero customers.\n";
-    }
-	else
-	{
-		cout << "Each one receives "
-			<< (totalWeight/numberOfCustomers) << " ounce(s) of ice cream." << endl;
+  if (numberOfCustomers == 0) {
+    cout << "Cannot divide among zero customers.\n";
+  }
+	else {
+	cout << "Each one receives "
+			 << (totalWeight/numberOfCustomers) << " ounce(s) of ice cream." << endl;
 	}
 }

@@ -10,7 +10,7 @@ int main()
 
 	v = 0;   //variable is equal to 0
 	p = &v;  //pointer holds the
-		   //  address of the variable
+		       //address of the variable
 
 	cout << "v is: " << v << endl;		// v is: 0
 	cout << "&v is: " << &v << endl;    // &v is: 0040F928 (address of v)
@@ -21,7 +21,7 @@ int main()
 	*p = 42; //dereference the pointer var
 
 	cout << "\n After dereferencing the "
-		<< "pointer variable: *p = 42\n";
+		   << "pointer variable: *p = 42\n";
 
 	cout << "v is: " << v << endl;		// v is: 42
 	cout << "&v is: " << &v << endl;	// &v is: 0040F928 (address of v)

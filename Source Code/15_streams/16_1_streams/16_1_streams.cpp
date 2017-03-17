@@ -2,7 +2,7 @@
 	IO Streams - Example 1
 
 	This program reads from a text file. file_1.txt, which
-	constains two numbers.
+	contains two numbers.
 
 	The file is in the same folder where the Main.cpp file is.
 */
@@ -26,8 +26,8 @@ int main()
 
 	//Print to screen
 	cout << "oneNumber = " << oneNumber << endl
-		<< "anotherNumber = " << anotherNumber
-		<< endl;
+		   << "anotherNumber = " << anotherNumber
+		   << endl;
 
 	//Close the file
 	infile.close();

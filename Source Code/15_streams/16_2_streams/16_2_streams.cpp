@@ -17,7 +17,7 @@ int main()
 {
 	//Numbers to write to the file
 	int n1 = 10,
-		n2 = 20;
+		  n2 = 20;
 
 	//Declare stream object
 	ofstream outfile;
@@ -29,7 +29,7 @@ int main()
 
 	//Print to file
 	outfile << "First number = " << n1 << endl
-		<< "Second number = " << n2	<< endl;
+		      << "Second number = " << n2	<< endl;
 
 	//Close the file
 	outfile.close();

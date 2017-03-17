@@ -11,23 +11,22 @@ double unitPrice(double diameter, double price);
 // @param double - the price of the pizz
 // @return double - the price per square inch of the pizza
 
-int main( )
+int main()
 {
-    double diameter, price;
-    char ans;
+  double diameter, price;
+  char ans;
 
-    do
-    {
-        cout << "Enter diameter and price:\n";
-        cin >> diameter >> price;
+  do {
+    cout << "Enter diameter and price:\n";
+    cin >> diameter >> price;
 
-        cout << "unit Price is $"
-             << unitPrice(diameter, price) << endl;
+    cout << "unit Price is $"
+         << unitPrice(diameter, price) << endl;
 
-        cout << "Test again? (y/n)";
-        cin >> ans;
-        cout << endl;
-    } while (ans == 'y' || ans == 'Y');
+    cout << "Test again? (y/n)";
+    cin >> ans;
+    cout << endl;
+  }while (ans == 'y' || ans == 'Y');
 
 	cout << endl;
 
@@ -38,8 +37,8 @@ int main( )
 
 double unitPrice(double diameter, double price)
 {
-    double radius = diameter/2.0;
-    double area = PI * radius * radius;
+  double radius = diameter/2.0;
+  double area = PI * radius * radius;
 
-    return (price/area);
+  return (price/area);
 }

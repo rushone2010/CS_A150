@@ -14,9 +14,9 @@ double unitPrice(int diameter, double price);
 //in inches. The price parameter is the price of the pizza.
 
 void outputResults(int smallDiameter, double priceSmall,
-             int largeDiameter, double priceLarge);
+                   int largeDiameter, double priceLarge);
 
-int main( )
+int main()
 {
     int diameterSmall, diameterLarge;
     double priceSmall, priceLarge;
@@ -34,15 +34,15 @@ int main( )
 void getData(int& smallDiameter, double& priceSmall,
              int& largeDiameter, double& priceLarge)
 {
-    cout << "Welcome to the Pizza Consumers Union.\n";
-    cout << "\nEnter diameter of a small pizza (in inches): ";
-    cin >> smallDiameter;
-    cout << "Enter the price of a small pizza: $";
-    cin >> priceSmall;
-    cout << "\nEnter diameter of a large pizza (in inches): ";
-    cin >> largeDiameter;
-    cout << "Enter the price of a large pizza: $";
-    cin >> priceLarge;
+  cout << "Welcome to the Pizza Consumers Union.\n";
+  cout << "\nEnter diameter of a small pizza (in inches): ";
+  cin >> smallDiameter;
+  cout << "Enter the price of a small pizza: $";
+  cin >> priceSmall;
+  cout << "\nEnter diameter of a large pizza (in inches): ";
+  cin >> largeDiameter;
+  cout << "Enter the price of a large pizza: $";
+  cin >> priceLarge;
 }
 
 void outputResults(int smallDiameter, double priceSmall,

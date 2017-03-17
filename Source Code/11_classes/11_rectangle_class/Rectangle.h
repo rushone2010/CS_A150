@@ -5,23 +5,22 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
-#include <iostream>		
+#include <iostream>
 using namespace std;
 
-class Rectangle
-{
-public:	
-	Rectangle( );
-		//default constructor
+class Rectangle {
+public:
+  Rectangle();
+	  //default constructor
 
 	Rectangle(double newWidth, double newHeight);
-		//overloaded constructor
-		//@param double - The width of the rectangle
-		//@param double - The height of the rectangle
+    //overloaded constructor
+  	//@param double - The width of the rectangle
+  	//@param double - The height of the rectangle
 
-	~Rectangle( );
-		//destructor
-	
+	~Rectangle();
+	  //destructor
+
 	/*** mutator functions ***/
 
 	void setWidth(double newWidth);
@@ -44,9 +43,9 @@ public:
 
 private:
 	//member variables
-	double width;	//width of the rectangle	
+	double width;	//width of the rectangle
 	double height;	//height of the rectangle
-	
+
 };
 
 #endif

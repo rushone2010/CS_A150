@@ -5,9 +5,9 @@
 #include <string>
 using namespace std;
 
-int main( )
+int main()
 {
-  	fstream inputStream;
+  fstream inputStream;
  	inputStream.open("player.txt");
 
 	int score;
@@ -16,7 +16,7 @@ int main( )
  	inputStream >> firstName >> lastName;
 
  	cout << "Name: " << firstName << " "
- 		<< lastName << endl;
+ 		   << lastName << endl;
  	cout << "Score: " << score << endl;
 
  	inputStream.close();

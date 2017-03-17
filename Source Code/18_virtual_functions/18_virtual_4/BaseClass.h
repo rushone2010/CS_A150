@@ -7,16 +7,16 @@ using namespace std;
 
 class BaseClass
 {
-public:
-	BaseClass();
-	BaseClass(const string& bVar);
+	public:
+		BaseClass();
+		BaseClass(const string& bVar);
 
-	virtual void print() const;			// making this function virtual
+		virtual void print() const;	// making this function virtual
 
-	virtual ~BaseClass();				// destructor should be virtual as well
+		virtual ~BaseClass();	// destructor should be virtual as well
 
-private:
-	string baseVar;
+	private:
+		string baseVar;
 };
 
 #endif

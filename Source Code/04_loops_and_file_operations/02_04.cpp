@@ -3,24 +3,23 @@
 #include <iostream>
 using namespace std;
 
-int main( )
+int main()
 {
-    int countDown;
-    cout << "How many greetings do you want? ";
-    cin >> countDown;
+  int countDown;
+  cout << "How many greetings do you want? ";
+  cin >> countDown;
 
-    while (countDown > 0)
-    {
-        cout << "Hello ";
-        --countDown; // use short-hand notation
-    }
+  while (countDown > 0) {
+    cout << "Hello ";
+    --countDown; // use short-hand notation
+  }
 
-    cout << endl;
-    cout << "That's all!\n";
+  cout << endl;
+  cout << "That's all!\n";
 
-	cout << endl;
+  cout << endl;
 
-    cin.ignore();
-    cin.get();
+  cin.ignore();
+  cin.get();
 	return 0;
 }

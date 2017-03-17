@@ -2,8 +2,8 @@
 
 #include "Rectangle.h"  //need to include the interface
 
-	// default constructor
-Rectangle::Rectangle( )
+// default constructor
+Rectangle::Rectangle()
 {
 	width = 0.0;
 	height = 0.0;
@@ -15,7 +15,7 @@ Rectangle::Rectangle(double newWidth, double newHeight)
 	height = newHeight;
 }
 
-Rectangle::~Rectangle( )
+Rectangle::~Rectangle()
 {
 }
 
@@ -38,4 +38,3 @@ double Rectangle::getHeight() const
 {
 	return height;
 }
-

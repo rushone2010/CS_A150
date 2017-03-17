@@ -1,12 +1,12 @@
 // This program creates partially-filled arrays
-//	of integers.
+// of integers.
 
 #include "DArray.h"
 
 #include <iostream>
 using namespace std;
 
-int main( )
+int main()
 {
 	DArray a1;
 	a1.addElement(10);

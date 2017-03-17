@@ -19,7 +19,7 @@ int main()
 {
 	//Characters to write on the file
 	char firstChar  = 'a',
-		 secondChar = 'b';
+		   secondChar = 'b';
 
 	//Declare stream object
 	ofstream outfile;
@@ -31,7 +31,7 @@ int main()
 
 	//Write to file
 	outfile << "First character = " << firstChar << endl
-		<< "Second character = " << secondChar << endl;
+		      << "Second character = " << secondChar << endl;
 
 	//Close the file
 	outfile.close();
@@ -44,14 +44,14 @@ int main()
 
 	//New characters to write on the file
 	char thirdChar  = 'c',
-		 fourthChar = 'd';
+		   fourthChar = 'd';
 
 	//Open file to write on --> If it doesn't exist, create it
 	outfile.open("file_3.txt", ios::app);
 
 	//Append new contents to file
 	outfile << "Third character = " << thirdChar << endl
-		<< "Fourth character = " << fourthChar << endl;
+		      << "Fourth character = " << fourthChar << endl;
 
 	//Close the file
 	outfile.close();

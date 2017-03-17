@@ -13,33 +13,36 @@ double totalCost(int numberOfItems, double pricePerItem);
 
 const double TAX_RATE = 0.05; //5% sales tax
 
-int main( )
+int main()
 {
-    int numberOfItems;
-    cout << "Enter the number of items purchased: ";
-    cin >> numberOfItems;
+  int numberOfItems;
+  cout << "Enter the number of items purchased: ";
+  cin >> numberOfItems;
 
-    double pricePerItem;
-    cout << "Enter the price per item $";
-    cin >> pricePerItem;
+  double pricePerItem;
+  cout << "Enter the price per item $";
+  cin >> pricePerItem;
 
-    double bill = totalCost(numberOfItems, pricePerItem);
+  double bill = totalCost(numberOfItems, pricePerItem);
 
-    cout.setf(ios::fixed);
-    cout.setf(ios::showpoint);
-    cout.precision(2);
+  cout.setf(ios::fixed);
+  cout.setf(ios::showpoint);
+  cout.precision(2);
 
-    cout << numberOfItems << " items at "
-         << "$" << pricePerItem << " each.\n"
-         << "Final bill, including tax, is $" << bill
-         << endl;
+  cout << numberOfItems << " items at "
+       << "$" << pricePerItem << " each.\n"
+       << "Final bill, including tax, is $" << bill
+       << endl;
 
-    cout << endl;
-    return 0;
+  cout << endl;
+
+  cin.ignore();
+  cin.get();
+  return 0;
 }
 
 double totalCost(int numberOfItems, double pricePerItem)
 {
-    double subtotal = pricePerItem * numberOfItems;
-    return (subtotal + subtotal * TAX_RATE);
+  double subtotal = pricePerItem * numberOfItems;
+  return (subtotal + subtotal * TAX_RATE);
 }

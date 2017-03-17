@@ -16,8 +16,7 @@ int main()
 	//Open the file
 	infile.open("long_file.txt");
 
-	if (infile.fail( ))
-	{
+	if (infile.fail( )) {
 	  cerr << "Input file opening failed.\n";
 	  exit(1);
 	}
@@ -25,11 +24,9 @@ int main()
 	//Read numbers from file as chars
 	char next;
 	infile.get(next);
-	while (!infile.eof( ))
-	{
+	while (!infile.eof( )) {
 		//output to screen
 		cout << next;
-
 		//keep on reading
 		infile.get(next);
 	}

@@ -16,12 +16,13 @@
 #include <iostream>
 using namespace std;
 
-void callPrint(BaseClass& obj);		// Generalize by passing an object
-									//   of the parent class.
+void callPrint(BaseClass& obj);
+// Generalize by passing an object
+// of the parent class.
 
 int main()
 {
-		// An object of the base class will work correctly.
+	// An object of the base class will work correctly.
 	BaseClass baseObj("Base variable");
 
 	cout << "PRINT THE BASE CLASS OBJ...\n";
@@ -29,7 +30,7 @@ int main()
 
 	cout << endl << endl;
 
-		// An object of the derived class will NOT work correctly.
+	// An object of the derived class will NOT work correctly.
 	DerivedClass derivedObj("Derived first variable", "Derived second variable");
 
 	cout << "PRINT THE DERIVED CLASS OBJ...\n";

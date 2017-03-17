@@ -1,9 +1,8 @@
 /*
 	Random numbers.
-	
-	*** Try and execute the program 
-	more than once to see results.
 
+	*** Try and execute the program
+	more than once to see results.
 */
 
 #include <iostream>
@@ -12,14 +11,15 @@
 using namespace std;
 
 int main()
-{  
-   for (int i = 1; i < 10; ++i)
-   {  
-      int r = rand();
-      cout << r << "\n";
-   }
+{
+  for (int i = 1; i < 10; ++i) {
+    int r = rand();
+    cout << r << "\n";
+  }
 
-   cout << endl;
-   system("Pause");
-   return 0;
+  cout << endl;
+
+  cin.ignore();
+  cin.get();
+  return 0;
 }

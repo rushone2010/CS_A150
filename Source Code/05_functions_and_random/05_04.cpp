@@ -17,34 +17,37 @@ double volume(double radius);
 // @param double - The radius of the sphere.
 // @return double - The volume of the sphere.
 
-int main( )
+int main()
 {
-    double radiusOfBoth;
-    cout << "Enter a radius to use for both a circle\n"
-            << "and a sphere (in inches): ";
-    cin >> radiusOfBoth;
+  double radiusOfBoth;
+  cout << "Enter a radius to use for both a circle\n"
+       << "and a sphere (in inches): ";
+  cin >> radiusOfBoth;
 
-    double areaOfCircle = area(radiusOfBoth);
-    double volumeOfSphere = volume(radiusOfBoth);
+  double areaOfCircle = area(radiusOfBoth);
+  double volumeOfSphere = volume(radiusOfBoth);
 
-    cout << "\nRadius = " << radiusOfBoth << " inches\n"
-        << "Area of circle = " << areaOfCircle
-        << " square inches\n"
-        << "Volume of sphere = " << volumeOfSphere
-        << " cubic inches\n";
+  cout << "\nRadius = " << radiusOfBoth << " inches\n"
+       << "Area of circle = " << areaOfCircle
+       << " square inches\n"
+       << "Volume of sphere = " << volumeOfSphere
+       << " cubic inches\n";
 
-    cout << endl;
-	return 0;
+  cout << endl;
+
+  cin.ignore();
+  cin.get();
+  return 0;
 }
 
 double area(double radius)
 {
 	// formula for area of a circle: (PI * r^2)
-    return (PI * radius * radius);
+  return (PI * radius * radius);
 }
 
 double volume(double radius)
 {
 	// formula for volume of a sphere: ((4/3) * PI * r^2)
-    return ((4.0/3.0) * PI * pow(radius, 3));
+  return ((4.0/3.0) * PI * pow(radius, 3));
 }

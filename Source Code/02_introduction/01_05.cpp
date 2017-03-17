@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main( )
+int main()
 {
 	cout << "How many years old is your dog?" << endl;
 	int actualAge;
@@ -17,8 +17,8 @@ int main( )
 
 	// 7 represents the numbe of human years equivalent to one dog year.
 	cout << dogName << "'s age is approximately "
-		<< "equivalent to a " <<  (actualAge * 7)
-		<< " year old human." << endl;
+		   << "equivalent to a " <<  (actualAge * 7)
+		   << " year old human." << endl;
 
 	cout << endl;
 

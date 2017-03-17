@@ -19,13 +19,13 @@ void showResults(int output1, int output2);
 // @param int - The first variable.
 // @param int - The second variable.
 
-int main( )
+int main()
 {
-    int firstNum, secondNum;
+  int firstNum, secondNum;
 
-    getNumbers(firstNum, secondNum);
-    swapValues(firstNum, secondNum);
-    showResults(firstNum, secondNum);
+  getNumbers(firstNum, secondNum);
+  swapValues(firstNum, secondNum);
+  showResults(firstNum, secondNum);
 
 	cout << endl;
 
@@ -36,20 +36,20 @@ int main( )
 
 void getNumbers(int& input1, int& input2)
 {
-    cout << "Enter two integers: ";
-    cin >> input1
-       >> input2;
+  cout << "Enter two integers: ";
+  cin >> input1
+      >> input2;
 }
 
 void swapValues(int& variable1, int& variable2)
 {
-    int temp = variable1;
-    variable1 = variable2;
-    variable2 = temp;
+  int temp = variable1;
+  variable1 = variable2;
+  variable2 = temp;
 }
 
 void showResults(int output1, int output2)
 {
-    cout << "In reverse order the numbers are: "
-        << output1 << " " << output2 << endl;
+  cout << "In reverse order the numbers are: "
+       << output1 << " " << output2 << endl;
 }

@@ -2,36 +2,36 @@
 
 #include "HourlyEmployee.h"
 
-	//default constructor
+//default constructor
 HourlyEmployee::HourlyEmployee()
 {
 	//Only need to set up the var of this class.
 	wageRate = 0;
 }
 
-	//overloaded constructor
+//overloaded constructor
 HourlyEmployee::HourlyEmployee
-			(const string& newSSN, double newRate)
-			 :Employee(newSSN)
+	(const string& newSSN, double newRate)
+	:Employee(newSSN)
 {
 	//No need to set ssn.
 	//Only need to set up the var of this class.
 	wageRate = newRate;
 }
 
-	//setRate
+//setRate
 void HourlyEmployee::setRate(double newRate)
 {
-    wageRate = newRate;
+  wageRate = newRate;
 }
 
-	//getRate
-double HourlyEmployee::getRate( ) const
+//getRate
+double HourlyEmployee::getRate() const
 {
-    return wageRate;
+  return wageRate;
 }
 
-	//printInfo
+//printInfo
 void HourlyEmployee::printInfo() const
 {
 	cout << "SSN: " << getSSN() << endl;
@@ -43,7 +43,7 @@ void HourlyEmployee::printInfo() const
 	//Employee::print();
 }
 
-	//destructor
+//destructor
 HourlyEmployee::~HourlyEmployee()
 {
 }

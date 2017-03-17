@@ -17,10 +17,10 @@ class SalariedEmployee : public Employee
 {
 public:
 	SalariedEmployee( );
-    SalariedEmployee (const string& newSSN, double newWeeklyPay);
+  SalariedEmployee (const string& newSSN, double newWeeklyPay);
 
 	void setSalary(double newSalary);
-    double getSalary( ) const;
+  double getSalary( ) const;
 
 	void print() const;
 
@@ -28,7 +28,7 @@ public:
 
 private:
 	//weekly salary
-    double salary;
+  double salary;
 };
 
 #endif

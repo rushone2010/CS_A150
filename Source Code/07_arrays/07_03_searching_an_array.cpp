@@ -28,7 +28,7 @@ void fillArray(int a[], int& numberUsed);
 // @param int& - The number of elements in the array
 
 bool searchFirstOccurrence(const int a[], int numberUsed,
-				int& location, int element);
+				                   int& location, int element);
 // search - Searches the array for a given number and
 //			returns true if found, false otherwise.
 //			Searches only for the first occurrence.
@@ -38,73 +38,68 @@ bool searchFirstOccurrence(const int a[], int numberUsed,
 // @return bool - Returns true if the element is found,
 //                   false otherwise.
 
-int main( )
+int main()
 {
-    int a[CAP];
+  int a[CAP];
 	int numOfElements = 0;
 
-    fillArray(a, numOfElements);
+  fillArray(a, numOfElements);
 
-    char ans = 'y';
-    int input = 0,
-	    location = -1;
+  char ans = 'y';
+  int input = 0,
+      location = -1;
 
-    do
-    {
-        cout << "Enter a number to search for: ";
-        cin >> input;
+  do {
+    cout << "Enter a number to search for: ";
+    cin >> input;
 
-        if (searchFirstOccurrence(a,numOfElements,location,input))
-            cout << input << " was found at index " << location << endl;
-        else
-			cout << input << " is not in the list." << endl;
+    if (searchFirstOccurrence(a,numOfElements,location,input))
+      cout << input << " was found at index " << location << endl;
+    else
+		cout << input << " is not in the list." << endl;
 
-        cout << "\nWould you like to earch again (y/n)? ";
-        cin >> ans;
+    cout << "\nWould you like to earch again (y/n)? ";
+    cin >> ans;
 
-    }while (ans == 'y');
+  }while (ans == 'y');
 
-    cout << endl;
-    
-    cin.ignore();
-    cin.get();
-    return 0;
+  cout << endl;
+
+  cin.ignore();
+  cin.get();
+  return 0;
 }
 
 void fillArray(int a[], int& numOfElements)
 {
-    cout << "Enter up to " << CAP << " nonnegative whole numbers and\n"
-         << "mark the end of the list with a negative number:\n";
+  cout << "Enter up to " << CAP << " nonnegative whole numbers and\n"
+       << "mark the end of the list with a negative number:\n";
 
-    int input;
-    cin >> input;
+  int input;
+  cin >> input;
 
-    while ((input >= 0) && (numOfElements < CAP))
-    {
-        a[numOfElements] = input;
-        ++numOfElements;
-        cin >> input;
-    }
+  while ((input >= 0) && (numOfElements < CAP)) {
+      a[numOfElements] = input;
+      ++numOfElements;
+      cin >> input;
+  }
 }
 
 
 bool searchFirstOccurrence(const int a[], int numberUsed,
-								int& location, int element)
+								           int& location, int element)
 {
-    int idx = 0;
+  int idx = 0;
 
-    while (idx < numberUsed)
-	{
-		if (element == a[idx])
-		{
-			location = idx;
-			return true;
-		}
-		else
-		{
-			++idx;
-		}
-	}
+  while (idx < numberUsed) {
+	  if (element == a[idx]) {
+      location = idx;
+      return true;
+	  }
+  	else {
+      ++idx;
+  	}
+  }
 
-	return false;
+  return false;
 }

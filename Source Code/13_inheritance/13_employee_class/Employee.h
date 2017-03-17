@@ -11,19 +11,19 @@ using namespace std;
 class Employee
 {
 public:
-    Employee( );
-    Employee(const string& newSSN);
+  Employee();
+  Employee(const string& newSSN);
 
-    string getSSN( ) const;
+  string getSSN() const;
 
-    void setSSN(const string& newSSN);
+  void setSSN(const string& newSSN);
 
-	void printInfo() const;
+  void printInfo() const;
 
-	~Employee();
+  ~Employee();
 
 private:
-    string ssn;
+  string ssn;
 };
 
 #endif

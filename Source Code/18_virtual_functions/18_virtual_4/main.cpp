@@ -8,15 +8,15 @@
 #include <iostream>
 using namespace std;
 
-void callPrint(BaseClass *p);		//We are passing a pointer
+void callPrint(BaseClass *p);	// We are passing a pointer
 
 int main()
 {
-		//Declaring a pointer that will
-		//  point to objects of the BaseClass
+	// Declaring a pointer that will
+	// point to objects of the BaseClass
 	BaseClass *pBase;
 
-		//Creating a dynamic object of the BaseClass
+	// Creating a dynamic object of the BaseClass
 	pBase = new BaseClass("Base variable");
 
 	cout << "PRINT THE BASE CLASS OBJ...\n";
@@ -24,11 +24,11 @@ int main()
 
 	cout << endl << endl;
 
-		//Declaring a pointer that will
-		//  point to objects of the DerivedClass
+	// Declaring a pointer that will
+	// point to objects of the DerivedClass
 	DerivedClass *pDerived;
 
-		//Creating a dynamic object of the DerivedClass
+	// Creating a dynamic object of the DerivedClass
 	pDerived = new DerivedClass("Derived first variable", "Derived second variable");
 
 	cout << "PRINT THE BASE CLASS OBJ...\n";

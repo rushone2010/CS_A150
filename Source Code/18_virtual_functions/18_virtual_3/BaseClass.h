@@ -7,16 +7,16 @@ using namespace std;
 
 class BaseClass
 {
-public:
-	BaseClass();
-	BaseClass(const string& bVar);
+  public:
+  	BaseClass();
+  	BaseClass(const string& bVar);
 
-	void print() const;
+  	void print() const;
 
-	~BaseClass();
+  	~BaseClass();
 
-private:
-	string baseVar;
+  private:
+  	string baseVar;
 };
 
 #endif

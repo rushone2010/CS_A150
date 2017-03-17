@@ -7,7 +7,7 @@ using namespace std;
 
 const double COST_PER_SQ_FT = 10.50;
 
-int main( )
+int main()
 {
   double budget;
   cout << "Enter the amount budgeted for your dog house $";
@@ -26,5 +26,8 @@ int main( )
        << " feet on each side.\n";
 
   cout << endl;
-  return 0;
+  
+  cin.ignore();
+  cin.get();
+	return 0;
 }

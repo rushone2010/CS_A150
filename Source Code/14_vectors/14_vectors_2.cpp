@@ -33,8 +33,9 @@ int main()
 		cout << "\nThere are items in the vector.\n";
 
 	//print vector
-	unsigned int numOfElements = v.size();			// EFFICIENCY: USE A VARIABLE TO STORE THE SIZE SO THAT THE
-													// FUNCTION IS NOT CONTINUOUSLY CALLED IN THE FOR LOOP
+	unsigned int numOfElements = v.size();
+  // EFFICIENCY: USE A VARIABLE TO STORE THE SIZE SO THAT THE
+  // FUNCTION IS NOT CONTINUOUSLY CALLED IN THE FOR LOOP
 	for(unsigned int i = 0; i < numOfElements; ++i)
 		cout << v[i] << " ";
 	cout << endl;

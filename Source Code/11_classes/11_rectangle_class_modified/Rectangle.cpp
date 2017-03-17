@@ -2,7 +2,7 @@
 
 #include "Rectangle.h"  //need to include the interface
 
-Rectangle::Rectangle( )
+Rectangle::Rectangle()
 {
 	width = 0.0;
 	height = 0.0;
@@ -42,4 +42,3 @@ double Rectangle::calculateArea() const
 {
 	return (width * height);
 }
-
